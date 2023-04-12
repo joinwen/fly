@@ -1,0 +1,22 @@
+{
+  "name": "fly",
+  "version": "1.0.0",
+  "description": "A beautiful framework named fly written with sass.",
+  "main": "index.js",
+  "scripts": {
+    "test": "xxx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "xxx"
+  },
+  "keywords": [
+    "sass",
+    "ui"
+  ],
+  "author": "cywen",
+  "license": "ISC",
+  "devDependencies": {
+    "scss": "^0.2.4"
+  }
+}

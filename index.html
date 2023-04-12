@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Colors</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .colors {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .br {
+            width: 100%;
+            height: 3px;
+        }
+        .box {
+            margin: 1em;
+            width: 80px;
+            height: 80px;
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="colors">
+    </div>
+    <script>
+      function createElement(html) {
+        let div= document.createElement("div");
+        div.innerHTML = html;
+        const firstChild = div.firstChild;
+        delete div;
+        return firstChild;
+      }
+      function createDarkColors(h, s) {
+        const len = 100;
+        const colors = document.querySelector(".colors");
+        // for(let i = 0; i <= len; i++) {
+        //   for(let j = 100; j <= len; j+=20) {
+        //     const div = createElement(`<div class="box"></div>`);
+        //     div.style.backgroundColor = `hsl(${h},${j}%,${i}%)`;
+        //     colors.appendChild(div);
+        //   }
+        // }
+        [50,65,80,93].forEach(v => {
+          const div = createElement(`<div class="box"></div>`);
+          div.style.backgroundColor = `hsl(${h},${s}%,${v}%)`;
+          colors.appendChild(div);
+        })
+        colors.appendChild(createElement("<div class='br'></div>"));
+        [7,20,35].forEach(v => {
+          const div = createElement(`<div class="box"></div>`);
+          div.style.backgroundColor = `hsl(${h},${s}%,${v}%)`;
+          colors.appendChild(div);
+        })
+        colors.appendChild(createElement("<div class='br'></div>"));
+      }
+      function createColors(h,s) {
+        const len = 100;
+        const colors = document.querySelector(".colors");
+        // for(let i = 0; i <= len; i++) {
+        //   for(let j = 100; j <= len; j+=20) {
+        //     const div = createElement(`<div class="box"></div>`);
+        //     div.style.backgroundColor = `hsl(${h},${j}%,${i}%)`;
+        //     colors.appendChild(div);
+        //   }
+        // }
+        [50,65,80,93].forEach(v => {
+          const div = createElement(`<div class="box"></div>`);
+          div.style.backgroundColor = `hsl(${h},${s}%,${v}%)`;
+          colors.appendChild(div);
+        })
+        colors.appendChild(createElement("<div class='br'></div>"));
+        [7,20,35].forEach(v => {
+          const div = createElement(`<div class="box"></div>`);
+          div.style.backgroundColor = `hsl(${h},${s}%,${v}%)`;
+          colors.appendChild(div);
+        })
+        colors.appendChild(createElement("<div class='br'></div>"));
+      }
+      createColors(0, 100);
+      createColors(0, 50);
+      createColors(30, 100);
+      createColors(60,100);
+      createColors(90,100);
+      createColors(120, 100);
+      createColors(150, 100);
+      createColors(180, 100);
+      createColors(210, 100);
+      createColors(240, 100);
+      createColors(270, 100);
+      createColors(300, 100);
+      createColors(330, 100);
+      /**
+       * 1.
+       */
+    </script>
+</body>
+</html>
