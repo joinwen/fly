@@ -26,6 +26,11 @@
             border: 1px solid black;
             border-radius: 4px;
         }
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: black;
+            }
+        }
     </style>
 </head>
 <body>
@@ -85,19 +90,30 @@
         })
         colors.appendChild(createElement("<div class='br'></div>"));
       }
-      createColors(0, 100);
-      createColors(0, 50);
-      createColors(30, 100);
-      createColors(60,100);
-      createColors(90,100);
-      createColors(120, 100);
-      createColors(150, 100);
-      createColors(180, 100);
-      createColors(210, 100);
-      createColors(240, 100);
-      createColors(270, 100);
-      createColors(300, 100);
-      createColors(330, 100);
+      function createWhite(h, s) {
+        const colors = document.querySelector(".colors");
+        [100,90,80,73].forEach(v => {
+          const div = createElement(`<div class="box"></div>`);
+          div.style.backgroundColor = `hsl(${h},${s}%,${v}%)`;
+          colors.appendChild(div);
+        })
+      }
+
+      // createColors(0, 100);
+      // createColors(0, 50);
+      // createColors(0, 70);
+      // createColors(30, 100);
+      // createColors(60,100);
+      // createColors(90,100);
+      // createColors(120, 100);
+      // createColors(150, 100);
+      // createColors(180, 100);
+      // createColors(210, 100);
+      // createColors(240, 100);
+      // createColors(270, 100);
+      // createColors(300, 100);
+      // createColors(330, 100);
+      // createWhite(0, 0);
       /**
        * 1.
        */

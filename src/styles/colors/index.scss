@@ -1,73 +1,168 @@
 // Colors
-// red
-$red hsl(0, 100%, 50%) !default;
-$red-light hsl(0, 100%, 65%) !default;
-$red-lighter hsl(0, 100%, 80%) !default;
-$red-lightest hsl(0, 100%, 93%) !default;
+// red 红色
+:root {
+  --red-darkest: hsl(0, 100%, 7%);
+  --red-darker: hsl(0, 100%, 20%);
+  --red-dark: hsl(0, 100%, 35%);
+  --red: hsl(0, 100%, 50%);
+  --red-light: hsl(0, 100%, 65%);
+  --red-lighter: hsl(0, 100%, 80%);
+  --red-lightest: hsl(0, 100%, 93%);
+}
 
-// yellow
-$yellow hsl(30, 100%, 50%) !default;
-$yellow-light hsl(30, 100%, 65%) !default;
-$yellow-lighter hsl(30, 100% 80%) !default;
-$yellow-lightest hsl(30, 100% 93%) !default;
+// orange 橙色
+:root {
+  --orange-darkest: hsl(30, 100%, 7%);
+  --orange-darker: hsl(30, 100%, 20%);
+  --orange-dark: hsl(30, 100%, 35%);
+  --orange: hsl(30, 100%, 50%);
+  --orange-light: hsl(30, 100%, 65%);
+  --orange-lighter: hsl(30, 100% 80%);
+  --orange-lightest: hsl(30, 100% 93%);
+}
 
-// yellow green
-$yellowgreen hsl(60, 100%, 50%) !default;
-$yellowgreen-light hsl(60, 100%, 65%) !default;
-$yellowgreen-lighter hsl(60, 100%, 80%) !default;
-$yellowgreen-lightest hsl(60, 100%, 93%) !default;
+// yellow 黄色
+:root {
+  --yellow-darkest: hsl(60, 100%, 7%);
+  --yellow-darker: hsl(60, 100%, 20%);
+  --yellow-dark: hsl(60, 100%, 35%);
+  --yellow: hsl(60, 100%, 50%);
+  --yellow-light: hsl(60, 100%, 65%);
+  --yellow-lighter: hsl(60, 100%, 80%);
+  --yellow-lightest: hsl(60, 100%, 93%);
+}
 
-// green
-$green hsl(90, 100%, 50%) !default;
-$green-light hsl(90, 100%, 65%) !default;
-$green-lighter hsl(90, 100%, 80%) !default;
-$green-lightest hsl(90, 100%, 93%) !default;
+// yellowgreen 黄绿色，草绿色，柠檬绿，青柠色
+:root {
+  --cyan-darkest: hsl(90, 100%, 7%);
+  --cyan-darker: hsl(90, 100%, 20%);
+  --cyan-dark: hsl(90, 100%, 35%);
+  --cyan :hsl(90, 100%, 50%);
+  --cyan-light: hsl(90, 100%, 65%);
+  --cyan-lighter: hsl(90, 100%, 80%);
+  --cyan-lightest: hsl(90, 100%, 93%);
+}
 
-// cyan
-$cyan hsl(120, 100%, 50%) !default;
-$cyan-light hsl(120, 100%, 65%) !default;
-$cyan-lighter hsl(120, 100%, 80%) !default;
-$cyan-lightest hsl(120, 100%, 93%) !default;
 
-// cyan green
-$cyangreen hsl(150, 100%, 50%) !default;
-$cyangreen-light hsl(150, 100%, 65%) !default;
-$cyangreen-lighter hsl(150, 100%, 80%) !default;
-$cyangreen-lightest hsl(150, 100%, 93%) !default;
+// green 绿色
+:root {
+  --green-darkest: hsl(120, 100%, 7%);
+  --green-darker: hsl(120, 100%, 20%);
+  --green-dark: hsl(120, 100%, 35%);
+  --green: hsl(120, 100%, 50%);
+  --green-light: hsl(120, 100%, 65%);
+  --green-lighter: hsl(120, 100%, 80%);
+  --green-lightest: hsl(120, 100%, 93%);
+}
 
-// blue
-$blue hsl(180, 100%, 50%) !default;
-$blue-light hsl(180, 100%, 65%) !default;
-$blue-lighter hsl(180, 100%, 80%) !default;
-$blue-lightest hsl(180, 100%, 93%) !default;
 
-// blue purple
-$bluepurple hsl(210, 100%, 50%) !default;
-$bluepurple-light hsl(210, 100%, 65%) !default;
-$bluepurple-lighter hsl(210, 100%, 80%) !default;
-$bluepurple-lightest hsl(210, 100%, 93%) !default;
+// green-cyan 青绿色，翠绿色，绿松石色
+:root {
+  --greencyan-darkest: hsl(150, 100%, 7%);
+  --greencyan-darker: hsl(150, 100%, 20%);
+  --greencyan-dark: hsl(150, 100%, 35%);
+  --greencyan :hsl(150, 100%, 50%);
+  --greencyan-light: hsl(150, 100%, 65%);
+  --greencyan-lighter: hsl(150, 100%, 80%);
+  --greencyan-lightest: hsl(150, 100%, 93%);
+}
 
-// purple
-$purple hsl(240, 100%, 50%) !default;
-$purple-light hsl(240, 100%, 65%) !default;
-$purple-lighter hsl(240, 100%, 80%) !default;
-$purple-lightest hsl(240, 100%, 93%) !default;
 
-// purple red
-$purplered hsl(270, 100%, 50%) !default;
-$purplered-light hsl(270, 100%, 65%) !default;
-$purplered-lighter hsl(270, 100%, 80%) !default;
-$purplered-lightest hsl(270, 100%, 93%) !default;
+// cyan 青色
+:root {
+  --blue-darkest: hsl(180, 100%, 7%);
+  --blue-darker: hsl(180, 100%, 20%);
+  --blue-dark: hsl(180, 100%, 35%);
+  --blue: hsl(180, 100%, 50%);
+  --blue-light: hsl(180, 100%, 65%);
+  --blue-lighter: hsl(180, 100%, 80%);
+  --blue-lightest: hsl(180, 100%, 93%);
+}
+
+
+// cyan-blue 青蓝色
+:root {
+  --cyanblue-darkest: hsl(210, 100%, 7%);
+  --cyanblue-darker: hsl(210, 100%, 20%);
+  --cyanblue-dark: hsl(210, 100%, 35%);
+  --cyanblue: hsl(210, 100%, 50%);
+  --cyanblue-light: hsl(210, 100%, 65%);
+  --cyanblue-lighter: hsl(210, 100%, 80%);
+  --cyanblue-lightest: hsl(210, 100%, 93%);
+}
+
+
+// blue 蓝色
+:root {
+  --purple-darkest: hsl(240, 100%, 7%);
+  --purple-darker: hsl(240, 100%, 20%);
+  --purple-dark: hsl(240, 100%, 35%);
+  --purple: hsl(240, 100%, 50%);
+  --purple-light: hsl(240, 100%, 65%);
+  --purple-lighter: hsl(240, 100%, 80%);
+  --purple-lightest: hsl(240, 100%, 93%);
+}
+
+
+// purple 紫色
+:root {
+  --purple-darkest: hsl(270, 100%, 7%);
+  --purple-darker: hsl(270, 100%, 20%);
+  --purple-dark: hsl(270, 100%, 35%);
+  --purple: hsl(270, 100%, 50%);
+  --purple-light: hsl(270, 100%, 65%);
+  --purple-lighter: hsl(270, 100%, 80%);
+  --purple-lightest: hsl(270, 100%, 93%);
+}
+
+// magenta 品红、洋红
+:root {
+  --purplered-darkest: hsl(300, 100%, 7%);
+  --purplered-darker: hsl(300, 100%, 20%);
+  --purplered-dark: hsl(300, 100%, 35%);
+  --purplered: hsl(300, 100%, 50%);
+  --purplered-light: hsl(300, 100%, 65%);
+  --purplered-lighter: hsl(300, 100%, 80%);
+  --purplered-lightest: hsl(300, 100%, 93%);
+}
+
+//
+:root {
+  --purplered-darkest: hsl(330, 100%, 7%);
+  --purplered-darker: hsl(330, 100%, 20%);
+  --purplered-dark: hsl(330, 100%, 35%);
+  --purplered: hsl(330, 100%, 50%);
+  --purplered-light: hsl(330, 100%, 65%);
+  --purplered-lighter: hsl(330, 100%, 80%);
+  --purplered-lightest: hsl(330, 100%, 93%);
+}
+
+
 
 // white
-$white hsl(0, 100%, 100%) !default;
-$white-light hsl(0, 100%, 65%) !default;
-$white-lighter hsl(0, 100%, 80%) !default;
-$white-lightest hsl(0, 100%, 93%) !default;
+:root {
+  --white: hsl(0, 100%, 100%);
+  --white-light: hsl(0, 0%, 99%);
+  --white-lighter: hsl(0, 0%, 98%);
+  --white-lightest: hsl(0, 0%, 96%);
+}
 
 // black
-$black hsl(0, 100%, 100%) !default;
-$black-light hsl(0, 100%, 65%) !default;
-$black-lighter hsl(0, 100%, 80%) !default;
-$black-lightest hsl(0, 100%, 93%) !default;
+:root {
+  --black: hsl(0, 0%, 0%);
+  --black-light: hsl(0, 0%, 2%);
+  --black-lighter: hsl(0, 0%, 4%);
+  --black-lightest: hsl(0, 0%, 8%);
+}
+
+// gray
+:root {
+  --gray-darkest: hsl(0, 0%, 35%);
+  --gray-darker: hsl(0, 0%, 40%);
+  --gray-dark: hsl(0, 0%, 45%);
+  --gray: hsl(0, 0%, 50%);
+  --gray-light: hsl(0, 0%, 55%);
+  --gray-lighter: hsl(0, 0%, 60%);
+  --gray-lightest: hsl(0, 0%, 65%);
+}
 
