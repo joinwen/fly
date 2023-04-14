@@ -1,0 +1,122 @@
+/**
+  1. alignment works in block layout including floated,positioned and table elements
+  2. alignment works in flexbox layout
+  3. alignment works in grid layout
+  4. alignment works in multi-column layout
+ */
+// 1. block layout
+// 1.1 floated
+
+// float left
+.float-left {
+  float: left;
+}
+// float right
+.float-right {
+  float: right;
+}
+// float center
+.float-center {
+  margin: 0 auto;
+}
+// 1.2 positioned
+// positioned left
+.position-left {
+  left: 0;
+  position: absolute;
+}
+// positioned right
+.position-right {
+  right: 0;
+  position: absolute;
+}
+// positioned top
+.position-top {
+  top: 0;
+  position: absolute;
+}
+// positioned bottom
+.position-bottom {
+  bottom: 0;
+  position: absolute;
+}
+// positioned center in vertically and horizontally
+.position-center {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+}
+// positioned center in vertically
+.position-center-v {
+  top: 0;
+  bottom: 0;
+  margin: 0 auto;
+  position: absolute;
+}
+// positioned center in horizontally
+.position-center-h {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: absolute;
+}
+
+// 1.3 table
+.table-left {
+  text-align: start;
+  display: table-cell;
+}
+.table-right {
+  text-align: end;
+  display: table-cell;
+}
+.table-justify {
+  text-align: justify;
+  display: table-cell;
+}
+.table-center-h {
+  text-align: center;
+  display: table-cell;
+}
+.table-top {
+  vertical-align: top;
+  display: table-cell;
+}
+.table-bottom {
+  vertical-align: bottom;
+  display: table-cell;
+}
+.table-center-v {
+  display: table-cell;
+  vertical-align: middle;
+}
+.table-center {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+// 2. flexbox layout
+.flex-right {
+  display: flex;
+  justify-content: flex-end;
+}
+.flex-left {
+  display: flex;
+  justify-content: flex-start;
+}
+.flex-center-h {
+  display: flex;
+  justify-content: center;
+}
+.flex-center-v {
+  display: flex;
+  justify-content: center;
+}
+.flex-center {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}

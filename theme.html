@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Theme</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body,html {
+            height: 100%;
+        }
+        :root {
+            --red-darkest: hsl(0, 100%, 7%);
+            --red-darker: hsl(0, 100%, 20%);
+            --red-dark: hsl(0, 100%, 35%);
+            --red: hsl(0, 100%, 50%);
+            --red-light: hsl(0, 100%, 65%);
+            --red-lighter: hsl(0, 100%, 80%);
+            --red-lightest: hsl(0, 100%, 93%);
+        }
+        :root {
+            --bg-color: white;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --red-darkest: hsl(0, 100%, 93%);
+                --red-darker: hsl(0, 100%, 80%);
+                --red-dark: hsl(0, 100%, 65%);
+                --red: hsl(0, 100%, 50%);
+                --red-light: hsl(0, 100%, 35%);
+                --red-lighter: hsl(0, 100%, 20%);
+                --red-lightest: hsl(0, 100%, 7%);
+            }
+            :root {
+                --bg-color: black;
+            }
+        }
+        body {
+            background-color: var(--bg-color);
+        }
+        .boxes {
+            margin: 2em;
+            display: flex;
+            line-height: 2em;
+            color: var(--red-darkest);
+            justify-content: space-between;
+        }
+        .box {
+            width: 80px;
+            height: 80px;
+            /*border-radius: 4px;*/
+            /*border: 1px solid black;*/
+        }
+        .box1 {
+            background-color: hsl(0, 0%, 99%);
+        }
+        .box2 {
+            background-color: hsl(0, 0%, 98%);
+        }
+        .box3 {
+            background-color: hsl(0, 0%, 96%);
+        }
+        .box4 {
+            background-color: hsl(0, 0%, 0%);
+        }
+        .box5 {
+            background-color: hsl(0, 0%, 2%);
+        }
+        .box6 {
+            background-color: hsl(0, 0%, 4%);
+        }
+        .box7 {
+            background-color: hsl(0, 0%, 8%);
+        }
+        .table {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        【自桓帝、灵帝以来，黄巾猖獗，天下纷争，社稷有累卵之危，生灵有倒悬之急，我太祖武皇帝，扫清六合，席卷八荒，万姓倾心，四方仰德，此非以权势取之，实乃天命所归也！】【盖天地有变，神器易更，而归有德之人，此自然之理。汉世数尽，黄巾扰乱，天下争锋，董卓叛逆，傕、汜行凶，袁术称帝于寿春，袁绍称雄于邺土；刘表占据荆州，吕布虎吞徐郡；社稷倾覆，生灵涂炭，我太祖武皇帝，扫清四海，平定八方，并非以权势所取，实天命所归也。】天命这种鬼话大可不信，桓、灵二帝腐败，让宦官当政是为祸根。而黄巾、董卓等让天下大乱让中央政权失去控制，这些都是双方认同的原因，敢问此时刘备和诸葛亮有何作为？
+
+        作者：苏沉船
+        链接：https://www.zhihu.com/question/34228174/answer/58807388
+        来源：知乎
+        著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+    </div>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    <div class="box box5"></div>
+    <div class="box box6"></div>
+    <div class="box box7"></div>
+
+    <div class="table">
+        <span>hello</span>
+    </div>
+</body>
+</html>

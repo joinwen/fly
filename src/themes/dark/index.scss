@@ -1,6 +1,4 @@
-:root {
-  --sm: 480px;
-  --md: 760px;
-  --lg: 975px;
-  --xl: 1440px;
+@import "../../styles/colors";
+:root.dark {
+
 }

@@ -1,0 +1,35 @@
+/**
+   box-model
+   1. content edge
+   2. padding edge
+   3. border edge
+   4. margin edge
+ */
+@function generate-padding-classes($name, $value) {
+  $classes:();
+  $directions: (t, b, l, r);
+  @if str-index($name, "-") == 0 {
+
+  } @else {
+    $classes: append($classes, ".p-#{$name} { padding: #{$value}; }");
+  }
+  @return $classes;
+}
+.p-1 {
+  padding: var(--pixel-unit);
+}
+.p-t-1 {
+  padding-top: var(--pixel-unit);
+}
+.p-b-1 {
+  padding-bottom: var(--pixel-unit);
+}
+.p-l-1 {
+  padding-left: var(--pixel-unit);
+}
+.p-r-1 {
+  padding-right: var(--pixel-unit);
+}
+.p-2 {
+  padding: calc(2 * var(--pixel-unit));
+}
